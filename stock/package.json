@@ -1,0 +1,14 @@
+{
+  "name": "stock-thread-stream-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npx esbuild index.js my-transport.js --bundle --splitting --format=esm --platform=node --outdir=dist --banner:js=\"import{createRequire}from'module';import{fileURLToPath as __fileURLToPath}from'url';import{dirname as __dirname_fn}from'path';const require=createRequire(import.meta.url);const __filename=__fileURLToPath(import.meta.url);const __dirname=__dirname_fn(__filename);\"",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "pino": "^9.0.0",
+    "pino-abstract-transport": "^2.0.0"
+  }
+}

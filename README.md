@@ -1,6 +1,6 @@
 # thread-stream Bundling PoC
 
-Proves [pinojs/thread-stream#210](https://github.com/pinojs/thread-stream/pull/210) fixes pino transport bundling with esbuild.
+Shows how [pinojs/thread-stream#210](https://github.com/pinojs/thread-stream/pull/210) fixes pino transport bundling with esbuild.
 
 Two identical projects — `stock/` and `patched/` — differ only in that `patched/` overrides `thread-stream` with the PR branch.
 
